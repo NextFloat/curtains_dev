@@ -1,6 +1,7 @@
 import base64
 import ctypes
 import os.path
+import sys
 from ctypes import wintypes
 from io import BytesIO
 
@@ -14,17 +15,17 @@ from PIL import Image
 from PIL import ImageGrab
 from pyinjector import inject
 
-pyinjector.libinjector_path = r"\assets\libinjector.cp311-win_amd64.pyd"
+# detect if frozen pyinstaller exe to
+if getattr(sys, 'frozen', False):
+    BASEDIR = sys._MEIPASS
+else:
+    BASEDIR = os.path.dirname(os.path.abspath(__file__))
 
-UNIQUE_PIDS = []
-CWD = os.getcwd()
 
 enumWindows = ctypes.windll.user32.EnumWindows
 enumWindowsProc = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.c_int, ctypes.POINTER(ctypes.c_int))
 getWindowText = ctypes.windll.user32.GetWindowTextW
 getWindowTextLength = ctypes.windll.user32.GetWindowTextLengthW
-
-
 # isWindowVisible = ctypes.windll.user32.IsWindowVisible
 
 def all_hwnds():
@@ -118,7 +119,7 @@ def hide_windows(pid):
     # inject into process
     # 1.Try 64-bit dll
     try:
-        inject(pid, (CWD + r"/assets/Hide.dll"))
+        inject(pid, (BASEDIR + r"/assets/Hide.dll"))
 
     except Exception as e:
         # print(f'{e}\n{pid} 64\n')
@@ -127,7 +128,7 @@ def hide_windows(pid):
 
     # 2.Try 32-bit dll
     try:
-        inject(pid, (CWD + r"/assets/Hide_32bit.dll"))
+        inject(pid, (BASEDIR + r"/assets/Hide_32bit.dll"))
 
     except Exception as e:
         # print(f'{e}\n{pid} 32\n already hidden\n')
@@ -140,7 +141,7 @@ def unhide_windows(pid):
     # inject into process
     # 1.Try 64-bit dll
     try:
-        inject(pid, (CWD + r"\assets\Unhide.dll"))
+        inject(pid, (BASEDIR + r"\assets\Unhide.dll"))
 
     except Exception as e:
         # print(f'{e}\n{pid} 64\n already visible\n')
@@ -148,7 +149,7 @@ def unhide_windows(pid):
         pass
     # 2.Try 32-bit dll
     try:
-        inject(pid, (CWD + r"\assets\Unhide_32bit.dll"))
+        inject(pid, (BASEDIR + r"\assets\Unhide_32bit.dll"))
 
     except Exception as e:
         # print(f'{e}\n{pid} 32\n')

@@ -2,7 +2,7 @@ import sqlite3
 import os
 
 
-database_name = os.getcwd() + '/assets/config.db'
+database_name = os.getcwd() + 'config.db'
 # Connect to the database
 conn = sqlite3.connect(database_name, check_same_thread=False)
 
