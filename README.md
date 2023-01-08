@@ -62,22 +62,26 @@ Either user downloaded the portable executable here or download the repository i
 pip install -r requirements.txt
 ```
 
+### cd to curtains folder
+```
+cd curtains
+```
+
 ### download DLL files
 Either manually download the latest Invisiwind portable realase zipfile and extract all .dll files to `/curtains/assets/` or run  
 ```
-python3 ./curtains/get_external_dlls.py
+python3 ./get_external_dlls.py
 ```
 
 ### start curtains
-    pyhon3 ./curtains/main.py
+    pyhon3 ./main.py
 
 ### pyinjector patch for Pyinstaller/flet pack (only needed if you wanna build an .exe file)
 The script copies the pyinjector binar to the assets folder and patches pyinjector to check if running as a bundled executable to use the copies binary insides /assets/.
 
-    python3 ./curtains/pyinjector_patch_for_pyinstaller.py
+    python3 ./pyinjector_patch_for_pyinstaller.py
 
 ### building single file executable with flet pack
-cd into curtains folder and run
 
     flet pack -i curtains.ico --add-data "assets;assets" curtains_gui.py
 
