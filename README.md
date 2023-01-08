@@ -63,7 +63,10 @@ pip install -r requirements.txt
 ```
 
 ### download DLL files
-Either manually download the latest Invisiwind portable realase zipfile and extract all .dll files to `/curtains/assets/` or run  ` python3 ./curtains/get_external_dlls.py`.
+Either manually download the latest Invisiwind portable realase zipfile and extract all .dll files to `/curtains/assets/` or run  
+```
+python3 ./curtains/get_external_dlls.py
+```
 
 ### start curtains
     pyhon3 ./curtains/main.py
