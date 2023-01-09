@@ -1,5 +1,5 @@
 
-#  Curtains
+# <img src="https://github.com/AbortLarboard/curtains_dev/blob/f4d56679000f5b01984972b1e24b9ec4106ed5cb/curtains/assets/curtains_32.png" /> Curtains
 *Curtains is a GUI application made for Windows to hide specific windows from screen sharing.*
 
 <img src="https://github.com/AbortLarboard/curtains_dev/blob/997bd5fb9ce96d513d75a9560bee00596d98dfd1/misc/curtains_demo_screenshot.png" />
