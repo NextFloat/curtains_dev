@@ -72,9 +72,9 @@ cd curtains
 ```
 
 ### download DLL files
-Either manually download the latest Invisiwind portable realase zipfile and extract all .dll files to `/curtains/assets/` or run  
+Either manually download the dll_assets.zip in latest release and extract all .dll files to `/curtains/assets/` or run the script to do it.
 ```
-python3 ./get_external_dlls.py
+python3 ./download_dll.py
 ```
 
 ### start curtains
