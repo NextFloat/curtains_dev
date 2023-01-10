@@ -73,6 +73,7 @@ cd curtains
 
 ### download DLL files
 Either manually download the dll_assets.zip in latest release and extract all .dll files to `/curtains/assets/` or run the script to do it.
+You can find the sourcecode in src_dll folder if you want to [build the dynamic link libraries yourself](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170)
 ```
 python3 ./download_dll.py
 ```
