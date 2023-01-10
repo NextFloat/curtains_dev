@@ -6,7 +6,7 @@
 
 
 ```diff
-- Right now Curtains is in early development, quite rudamentary. -
+- Right now Curtains is in early development / just basic features. -
 ```
 	
 ### Screen sharing can be a delicate process
