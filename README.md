@@ -87,7 +87,7 @@ The script copies the pyinjector binar to the assets folder and patches pyinject
 
 ### building single file executable with flet pack
 
-    flet pack -i curtains.ico --add-data "assets;assets" curtains_gui.py
+    flet pack -i curtains.ico --add-data "assets;assets" main.py
 
 
 
