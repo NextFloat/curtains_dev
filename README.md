@@ -21,9 +21,9 @@ There are a few other tools targeting this problem, like [Invisiwind](https://gi
 
 ### Window un-/hiding
 
-Windows can be hidden by using the Win32 API to change the [WindowDisplayAffinity](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity) of a window to `WDA_EXCLUDEFROMCAPTURE`.
+Windows can be hidden by using the Win32 API to change the [WindowDisplayAffinity](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity) of a window to `WDA_EXCLUDEFROMCAPTURE` or `WDA_NONE`.
 
-Since those API calls need originate from the process that owns the windows, curtains uses sane dll-injection using [pyinjector](https://github.com/kmaork/pyinjector) (a python wrapper for [kubo/injector](https://github.com/kubo/injector)).
+Since those API calls need to originate from the process that owns the windows, curtains uses sane dll-injection using [pyinjector](https://github.com/kmaork/pyinjector) (a python wrapper for [kubo/injector](https://github.com/kubo/injector)).
 	
 The code for the dll files is copied from [Invisiwind](https://github.com/radiantly/Invisiwind).   
 	
@@ -58,7 +58,7 @@ black screenshot could get your account banned.
 
 
 # How to run / install
-Either user downloaded the portable executable here or download the repository into a virtual environment and follow the instructions below.
+Either user downloaded the portable executable here or download the repository, unpack it into a virtual environment and follow the instructions below.
 
 
 ### install requirements
