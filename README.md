@@ -119,6 +119,7 @@ In case of Curtains, all the injected process do is call the Win32 API with [Set
 # Planned features & TODOs
 
  - hotkey to un-/hide the active window
+ - turn off preview if minimized
  - *hide everything* mode (allowlist mode)
  - rule table to hide/not hide windows (allowlist/blocklist)
  - option to run as trayicon
