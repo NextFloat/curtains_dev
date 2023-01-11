@@ -8,12 +8,15 @@ import importlib
 
 def patch_pyinjector():
     """a patch to make pyinjector work with pyinstaller"""
-    patch_code = ['import platform\n', '\n',
+    patch_code = ['import platform\n',
+                  '\n',
                   '# patch_code for pyinstaller: detect if frozen to find the right pyd binary\n',
-                  "if getattr(sys, 'frozen', False):\n", '    os_bit = platform.machine().lower()\n',
+                  "if getattr(sys, 'frozen', False):\n",
+                  '    os_bit = platform.machine().lower()\n',
                   "    py_runtime = str(sys.version[0:4]).replace('.', '')\n",
-                  "    bin_name = f'libinjector.cp{py_runtime}-win_{os_bit}.pyd'\n", '    basedir = sys._MEIPASS\n',
-                  "    libinjector_path = str(os.path.join(basedir, '/assets/')) + bin_name\n", 'else:\n',
+                  "    bin_name = f'libinjector.cp{py_runtime}-win_{os_bit}.pyd'\n",
+                  "    libinjector_path = os.path.join(sys._MEIPASS, 'assets') + '/' + bin_name\n",
+                  'else:\n',
                   "    libinjector_path = find_spec('.libinjector', __package__).origin\n"]
     spec = importlib.util.find_spec("pyinjector")
     pyfile_path = spec.submodule_search_locations[0] + r'\pyinjector.py'
