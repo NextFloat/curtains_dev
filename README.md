@@ -128,6 +128,7 @@ In case of Curtains, all the injected process do is call the Win32 API with [Set
 	 - change window titles
  - windows notifications to alert when new unhidden window appears + prompt option
  - configuration menu
+ - dynamic scaling of GUI elements
  - upload as pypi package
 
 
