@@ -111,7 +111,7 @@ Yes!
 
 ### DLL-injection sounds dangerous.Will it trigger AV or any kind of malware scanner?
 No, Curtains is safe software.
-[DLL-Injection](https://en.wikipedia.org/wiki/DLL_injection) is the process of attaching external code to a running process. It is like telling a process to do something it was not intended to do. So it depends on what you tell the process to do.
+[DLL-Injection](https://en.wikipedia.org/wiki/DLL_injection) is the process of attaching external code to a running process. It is like telling a process to do something it was not intended to do. So it depends on what you tell the process to do. Despite this i cannot rule out AV software flagging Curtains as potentially dangerous because pyinstaller and pyinjector are both known for some false positives.
 
 In case of Curtains, all the injected process do is call the Win32 API with [SetDisplayAffinity](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity) and changes the value for given windows to `WDA_EXCLUDEFROMCAPTURE` or the other way around to `WDA_NONE`. The dll files to do this are open-source, can be checked or build by anyone. 
 
