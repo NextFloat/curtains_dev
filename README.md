@@ -125,5 +125,6 @@ In case of Curtains, all the injected process do is call the Win32 API with [Set
  - windows notifications to alert when new unhidden window appears + prompt option
  - upload as pypi package
  - dynamic window size (in hope for flet update to call parent/children soon)
+ - implementing a method to verify and validate the dll files befor injection for safety reasons
 
 
