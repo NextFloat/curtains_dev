@@ -1,4 +1,4 @@
-# Curtains 0.75a_dev
+# <img src="https://github.com/AbortLarboard/curtains_dev/blob/1a9b168913354ef0173df05d444735f648417879/misc/curtains_logo.png" width=50 /> Curtains 0.75a_dev
 
 *Curtains is a GUI application made for Windows to hide specific windows from screen sharing.*
 
