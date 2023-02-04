@@ -2,13 +2,9 @@
 # <img src="https://github.com/AbortLarboard/curtains_dev/blob/f4d56679000f5b01984972b1e24b9ec4106ed5cb/curtains/assets/curtains_32.png" /> Curtains
 *Curtains is a GUI application made for Windows to hide specific windows from screen sharing.*
 
-<img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtains_windows_nofilter_0.75.png"  width=50% height=50% />
-
-
-<img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtains_windows_filter.0.75.png"  width=50% height=50% />
-
-
-<img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtain_0.75_preview.png"  width=50% height=50% />
+<img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtains_windows_nofilter_0.75.png"  width=30% height=30% />
+<img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtains_windows_filter.0.75.png"  width=30% height=30% />
+<img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtain_0.75_preview.png"  width=30% height=30% />
 
 
 ```diff
