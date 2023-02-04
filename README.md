@@ -50,11 +50,10 @@ Thanks to [flet](https://github.com/flet-dev/flet) the whole interface could be 
  - right now only all windows of a process can be hidden/unhidden.
 	- some processes e.g. the main explorer.exe (running taskbar, trays, wallpaper, etc.) have non visible, non clickable windows which will be visible when unhiding the processs windows. Workaround: Either
    don't hide those processes or keep them hidden until logout.
-- some very rare processes cannot be hidden because they have some kind of protection built
-- some processes cannot be hidden because they are running with higher priviliges. Solution: run Curtains with higher priviliges.
+- some processes cannot be hidden because they are running with higher priviliges/other users. Solution: run Curtains with higher priviliges.
 - hibernation might cause the GUI to be empty. Solution: Close and restart Curtains. 
 - **BEWARE GAMERS**: if you play computer games with third party anti-cheat software you should **never** hide any of the game windows. Some anti-cheat software take automatic screenshots and a missing or
-black screenshot could get your account banned.
+black screenshot could get your account banned. Use at your own risk.
 
 
 # How to run / install
