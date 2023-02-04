@@ -2,7 +2,13 @@
 # <img src="https://github.com/AbortLarboard/curtains_dev/blob/f4d56679000f5b01984972b1e24b9ec4106ed5cb/curtains/assets/curtains_32.png" /> Curtains
 *Curtains is a GUI application made for Windows to hide specific windows from screen sharing.*
 
-<img src="https://github.com/AbortLarboard/curtains_dev/blob/997bd5fb9ce96d513d75a9560bee00596d98dfd1/misc/curtains_demo_screenshot.png" />
+<img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtains_windows_nofilter_0.75.png"  width=50% height=50% />
+
+
+<img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtains_windows_filter.0.75.png"  width=50% height=50% />
+
+
+<img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtain_0.75_preview.png"  width=50% height=50% />
 
 
 ```diff
@@ -79,6 +85,7 @@ python3 ./download_dll.py
 ```
 
 ### start curtains
+    cd curtains
     pyhon3 ./main.py
 
 ### pyinjector patch for Pyinstaller/flet pack (only needed if you wanna build an .exe file)
@@ -107,28 +114,22 @@ It is not because python is slower than compiled languages. There is no heavy li
 - after playing around with a douzend different GUI frameworks, flet finally looks and feels like what i was looking for. I had to build something with it. 
 
 ### Can i run it on machines without admin rights?
-Yes! 
+Yes! but it will only work on processes owned by your user, that are running without admin rights.
 
 ### DLL-injection sounds dangerous.Will it trigger AV or any kind of malware scanner?
 Curtains is safe software.
 [DLL-Injection](https://en.wikipedia.org/wiki/DLL_injection) is the process of attaching external code to a running process. It is like telling a process to do something it was not intended to do. So it depends on what you tell the process to do. Despite this i cannot rule out AV software flagging Curtains as potentially dangerous because pyinstaller and pyinjector are both known for some false positives.
 
-In case of Curtains, all the injected process do is call the Win32 API with [SetDisplayAffinity](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity) and changes the value for given windows to `WDA_EXCLUDEFROMCAPTURE` or the other way around to `WDA_NONE`. The dll files to do this are open-source, can be checked or build by anyone. 
-
+In case of Curtains, all the injected process do is call the Win32 API with [SetDisplayAffinity](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity) and changes the value for given windows to `WDA_EXCLUDEFROMCAPTURE` or the other way around to `WDA_NONE`. The dll files to do this are open-source, can be checked or build by anyone. Curtains will only be able to do this if it has the needed priviliges aka. it will only work on windows run by the user that runs curtains.
 
 # Planned features & TODOs
 
  - hotkey to un-/hide the active window
- - turn off preview if minimized
- - *hide everything* mode (allowlist mode)
- - rule table to hide/not hide windows (allowlist/blocklist)
  - option to run as trayicon
  - option to run at startup
- - window manager to see all windows with position and title. 
-	 - change window titles
+ - edit window titles / aka custom titles
  - windows notifications to alert when new unhidden window appears + prompt option
- - configuration menu
- - dynamic scaling of GUI elements
  - upload as pypi package
+ - dynamic window size (in hope for flet update to call parent/children soon)
 
 
