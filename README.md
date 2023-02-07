@@ -12,7 +12,7 @@ Curtains goal is to solve the problem, **keep private  screen content private** 
 There are a few other tools targeting this problem, like [Invisiwind](https://github.com/radiantly/Invisiwind), which inspired me to do something similiar, add more functions and a simplistic GUI.  To my suprise i found none with those features.
 
 # How to run / install
-Either user downloaded the portable executable here or download the repository, unpack it into a virtual environment and follow the instructions below.
+Either download the latest portable executable or download the repository, unpack it into a virtual environment and follow the instructions below.
 
 requirements for source to run:
 - [flet==0.4.0](https://github.com/flet-dev/flet)
