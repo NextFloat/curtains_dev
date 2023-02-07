@@ -3,11 +3,6 @@
 *Curtains is a GUI application made for Windows to hide specific windows from screen sharing.*
 
 <img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtains_windows_nofilter_0.75.png"  width=30% height=30% /><img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtains_windows_filter.0.75.png"  width=30% height=30% /><img src="https://github.com/AbortLarboard/curtains_dev/blob/6e556fbaca2fcfb281131a08af1b4e67712c9efc/misc/curtain_0.75_preview.png"  width=30% height=30% />
-
-
-```diff
-- Right now Curtains is in early development / just basic features. -
-```
 	
 ### Screen sharing can be a delicate process
 Since the pandemic video calls and screen sharing became much more frequent. I noticed that many struggled at least once with keeping private content out of their screen while sharing it. Be it a windows notification, a messenger app, an open browser, alt+tab preview, or simply forgetting to turn screensharing off while returning to usual buisness.
