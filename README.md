@@ -20,7 +20,7 @@ requirements for source to run:
 - [psutil==5.9.4](https://github.com/giampaolo/psutil)
 - [pyinjector==1.1.1](https://github.com/kmaork/pyinjector)
 - [pywin32==305](https://github.com/mhammond/pywin32)
-- [mss=7.0.1´](https://github.com/BoboTiG/python-mss)
+- [mss=7.0.1](https://github.com/BoboTiG/python-mss)
 
 
 # How does it work?
