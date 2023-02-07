@@ -11,6 +11,17 @@ Curtains goal is to solve the problem, **keep private  screen content private** 
 
 There are a few other tools targeting this problem, like [Invisiwind](https://github.com/radiantly/Invisiwind), which inspired me to do something similiar, add more functions and a simplistic GUI.  To my suprise i found none with those features.
 
+# How to run / install
+Either user downloaded the portable executable here or download the repository, unpack it into a virtual environment and follow the instructions below.
+
+requirements for source to run:
+`flet==0.4.0
+Pillow==9.4.0
+psutil==5.9.4
+pyinjector==1.1.1
+pywin32==305
+mss=7.0.1´
+
 
 # How does it work?
 
@@ -49,10 +60,6 @@ Thanks to [flet](https://github.com/flet-dev/flet) the whole interface could be 
 - hibernation might cause the GUI to be empty. Solution: Close and restart Curtains. 
 - **BEWARE GAMERS**: if you play computer games with third party anti-cheat software you should **never** hide any of the game windows. Some anti-cheat software take automatic screenshots and a missing or
 black screenshot could get your account banned. Use at your own risk.
-
-
-# How to run / install
-Either user downloaded the portable executable here or download the repository, unpack it into a virtual environment and follow the instructions below.
 
 
 ### install requirements
