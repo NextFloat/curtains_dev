@@ -15,12 +15,12 @@ There are a few other tools targeting this problem, like [Invisiwind](https://gi
 Either user downloaded the portable executable here or download the repository, unpack it into a virtual environment and follow the instructions below.
 
 requirements for source to run:
-- flet==0.4.0
-- Pillow==9.4.0
-- psutil==5.9.4
-- pyinjector==1.1.1
-- pywin32==305
-- mss=7.0.1´
+- [flet==0.4.0](https://github.com/flet-dev/flet)
+- [Pillow==9.4.0](https://github.com/python-pillow/Pillow)
+- [psutil==5.9.4](https://github.com/giampaolo/psutil)
+- [pyinjector==1.1.1](https://github.com/kmaork/pyinjector)
+- [pywin32==305](https://github.com/mhammond/pywin32)
+- [mss=7.0.1´](https://github.com/BoboTiG/python-mss)
 
 
 # How does it work?
