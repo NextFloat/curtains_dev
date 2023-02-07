@@ -15,6 +15,8 @@ There are a few other tools targeting this problem, like [Invisiwind](https://gi
 Either download the latest portable executable or download the repository, unpack it into a virtual environment and follow the instructions below.
 
 requirements for source to run:
+
+Python => 3.1
 - [flet==0.4.0](https://github.com/flet-dev/flet)
 - [Pillow==9.4.0](https://github.com/python-pillow/Pillow)
 - [psutil==5.9.4](https://github.com/giampaolo/psutil)
